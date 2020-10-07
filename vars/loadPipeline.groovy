@@ -8,6 +8,7 @@ def call() {
     def jenkinsPipeline = 'Jenkinsfile' // ".groovy" extension will be added automatically
     def jenkinsCredentialsId = 'Gitlab'
     def jenkinsNode = '' // Specifies a node to be used for checkout, default value: empty string (runs on any node)
+    def fileLoader
     def pipeline
 
     stage('load pipeline') {
